@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+</head>
+<body>
+<div id="sidebar">
+    <div class="mui--text-black mui--text-display1 mui--align-vertical">Choose City</div>
+    <form class="mui-form">
+        <div class="mui-textfield">
+            <input id="city" type="text" placeholder="City">
+            <div id="error"></div>
+        </div>
+        <button id="search-btn" type="submit" class="mui-btn mui-btn--raised">Search</button>
+    </form>
+    <div>
+        <ul id="cities" class="cities">
+
+        </ul>
+    </div>
+</div>
+<div id="content" class="mui-container-fluid">
+    <div class="mui-row">
+        <div class="mui-col-sm-10 mui-col-sm-offset-1">
+            <br><br>
+            <div id="weather-card" class="mui-panel weather-card">
+                <div class="weather-temp">
+                    <div id="city-name" class="city-name"></div>
+                    <div id="temp" class=" mui--text-center mui--text-display4 degree"></div>
+                </div>
+                <ul id="days" class="days"></ul>
+                <div class="favouriteBtn">
+                    <button id="favouriteBtn" class="mui-btn mui-btn--primary">Add to Favourite</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
